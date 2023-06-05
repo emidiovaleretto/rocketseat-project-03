@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+
+<body>
+  <section>
+    <h1>Create and share your event.</h1>
+    <p>The first step is to fill out this application form.</p>
+
+    <form action="" method="GET">
+      <header>
+        <h2>Event Information</h2>
+      </header>
+
+      <div>
+        <label for="eventTitle">Event Title</label>
+        <input type="text" name="eventTitle" id="eventTitle">
+
+        <label for="eventLink">Event Link</label>
+        <input type="url" name="eventLink" id="eventLink">
+
+        <label for="eventContact">WhatsApp for contact</label>
+        <input type="tel" name="eventContact" id="eventContact">
+
+        <label for="eventInfo">Further Information</label>
+        <textarea name="eventInfo" id="eventInfo"></textarea>
+
+        <label for="eventCategory">Category</label>
+        <select name="eventCategory" id="eventCategory">
+          <option value="social">Social</option>
+          <option value="wedding">Wedding</option>
+          <option value="birthdayParty">Birthday Party</option>
+        </select>
+      </div>
+
+      <header>
+        <h2>Privacy</h2>
+      </header>
+
+      <div>
+        <label for="adminEmail">Administrator Email</label>
+        <input type="email" name="adminEmail" id="adminEmail">
+
+        <label for="password">Access password for participants</label>
+        <input type="password" name="password" id="password">
+
+        <input type="checkbox" name="isPrivate" id="isPrivate">
+        <label for="isPrivate">Private event</label>
+      </div>
+
+      <header>
+        <h2>Date and Time</h2>
+      </header>
+
+      <div>
+        <label for="eventDate">Date</label>
+        <input type="date" name="eventDate" id="eventDate">
+
+        <label for="eventFrom">From</label>
+        <input type="time" name="eventFrom" id="eventFrom">
+
+        <label for="eventTo">To</label>
+        <input type="time" name="eventTo" id="eventTo">
+      </div>
+
+      <footer>
+        <input type="submit" value="Save event">
+      </footer>
+    </form>
+  </section>
+</body>
+
+</html>
