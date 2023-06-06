@@ -35,3 +35,40 @@ body {
 
   width: 283px;
 }
+
+/* Form */
+
+.container form {
+  background-color: #fafafc;
+  padding: 64px;
+
+  margin-top: -80px;
+
+  border-radius: 8px 8px 0 0;
+}
+
+.container div {
+  display: flex;
+  flex-direction: column;
+}
+
+header h2 {
+  font-family: "Archivo", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e6e6f0;
+}
+
+form div label {
+  color: #4e4958;
+  font-size: 0.875rem;
+
+  padding: 24px 0 8px 0;
+}
+
+form input {
+  background-color: #fafafc;
+  padding: 12px;
+}
