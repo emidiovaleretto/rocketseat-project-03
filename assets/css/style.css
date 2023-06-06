@@ -1,3 +1,5 @@
+/* Global */
+
 * {
   padding: 0;
   margin: 0;
@@ -13,6 +15,8 @@ body {
   max-width: 736px;
   margin: 0 auto 80px;
 }
+
+/* Header */
 
 .header {
   background-color: #121214;
@@ -51,22 +55,32 @@ body {
 .wrapper {
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 
-header h2 {
+fieldset {
+  border: none;
+}
+
+fieldset:not(:first-child) {
+  margin-top: 48px;
+}
+
+fieldset legend {
   font-family: "Archivo", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
 
   padding-bottom: 16px;
   border-bottom: 1px solid #e6e6f0;
+  width: 100%;
 }
 
 label {
   color: #4e4958;
   font-size: 0.875rem;
 
-  padding: 24px 0 8px 0;
+  padding-top: 18px;
 }
 
 label span {
@@ -75,7 +89,8 @@ label span {
 }
 
 .wrapper input,
-.wrapper textarea {
+.wrapper textarea,
+.wrapper select {
   background-color: #fafafc;
   border-radius: 8px;
   border: 1px solid #e6e6f0;
