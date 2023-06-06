@@ -24,60 +24,60 @@
 
   <section class="container">
     <form action="/" method="GET">
-      <header>
-        <h2>Event Information</h2>
-      </header>
+      <fieldset>
+        <legend>Event Information</legend>
 
-      <div class="wrapper">
-        <label for="eventTitle">Event Title <span>(It must be at least 8 characters)</span></label>
-        <input type="text" name="eventTitle" id="eventTitle">
+        <div class="wrapper">
+          <label for="eventTitle">Event Title <span>(It must be at least 8 characters)</span></label>
+          <input type="text" name="eventTitle" id="eventTitle">
 
-        <label for="eventLink">Event Link <span>(Starts with https://)</span></label>
-        <input type="url" name="eventLink" id="eventLink">
+          <label for="eventLink">Event Link <span>(Starts with https://)</span></label>
+          <input type="url" name="eventLink" id="eventLink">
 
-        <label for="eventContact">WhatsApp for contact <span>(Only numbers)</span></label>
-        <input type="tel" name="eventContact" id="eventContact">
+          <label for="eventContact">WhatsApp for contact <span>(Only numbers)</span></label>
+          <input type="tel" name="eventContact" id="eventContact">
 
-        <label for="eventInfo">Further Information</label>
-        <textarea name="eventInfo" id="eventInfo"></textarea>
+          <label for="eventInfo">Further Information</label>
+          <textarea name="eventInfo" id="eventInfo"></textarea>
 
-        <label for="eventCategory">Category</label>
-        <select name="eventCategory" id="eventCategory">
-          <option>Event type</option>
-          <option value="social">Social</option>
-          <option value="wedding">Wedding</option>
-          <option value="birthdayParty">Birthday Party</option>
-        </select>
+          <label for="eventCategory">Category</label>
+          <select name="eventCategory" id="eventCategory">
+            <option>Event type</option>
+            <option value="social">Social</option>
+            <option value="wedding">Wedding</option>
+            <option value="birthdayParty">Birthday Party</option>
+          </select>
+      </fieldset>
 
-        <header>
-          <h2>Privacy</h2>
-        </header>
+      <fieldset>
+        <legend>Privacy</legend>
+        <div class="wrapper">
+          <label for="adminEmail">Administrator Email <span>(Enter a valid email)</span></label>
+          <input type="email" name="adminEmail" id="adminEmail">
 
-        <label for="adminEmail">Administrator Email <span>(Enter a valid email)</span></label>
-        <input type="email" name="adminEmail" id="adminEmail">
+          <label for="password">Access password for participants <span>(Your password must be at least 8
+              characters)</span></label>
+          <input type="password" name="password" id="password">
 
-        <label for="password">Access password for participants <span>(Your password must be at least 8
-            characters)</span></label>
-        <input type="password" name="password" id="password">
+          <input type="checkbox" name="isPrivate" id="isPrivate">
+          <label for="isPrivate">Private event</label>
+        </div>
+      </fieldset>
 
-        <input type="checkbox" name="isPrivate" id="isPrivate">
-        <label for="isPrivate">Private event</label>
-      </div>
+      <fieldset>
+        <legend>Date and Time</legend>
 
-      <header>
-        <h2>Date and Time</h2>
-      </header>
+        <div class="date">
+          <label for="eventDate">Date</label>
+          <input type="date" name="eventDate" id="eventDate">
 
-      <div>
-        <label for="eventDate">Date</label>
-        <input type="date" name="eventDate" id="eventDate">
+          <label for="eventFrom">From</label>
+          <input type="time" name="eventFrom" id="eventFrom">
 
-        <label for="eventFrom">From</label>
-        <input type="time" name="eventFrom" id="eventFrom">
-
-        <label for="eventTo">To</label>
-        <input type="time" name="eventTo" id="eventTo">
-      </div>
+          <label for="eventTo">To</label>
+          <input type="time" name="eventTo" id="eventTo">
+        </div>
+      </fieldset>
 
       <footer>
         <input type="submit" value="Save event">
