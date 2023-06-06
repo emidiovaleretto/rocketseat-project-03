@@ -72,3 +72,19 @@ form input {
   background-color: #fafafc;
   padding: 12px;
 }
+
+footer {
+  padding-top: 40px;
+}
+
+footer input {
+  display: block;
+  width: 100%;
+
+  background-color: #04d361;
+  color: #ffffff;
+
+  text-transform: uppercase;
+
+  border-radius: 8px;
+}
