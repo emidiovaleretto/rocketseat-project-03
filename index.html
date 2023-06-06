@@ -28,14 +28,14 @@
         <h2>Event Information</h2>
       </header>
 
-      <div>
-        <label for="eventTitle">Event Title</label>
+      <div class="wrapper">
+        <label for="eventTitle">Event Title <span>(It must be at least 8 characters)</span></label>
         <input type="text" name="eventTitle" id="eventTitle">
 
-        <label for="eventLink">Event Link</label>
+        <label for="eventLink">Event Link <span>(Starts with https://)</span></label>
         <input type="url" name="eventLink" id="eventLink">
 
-        <label for="eventContact">WhatsApp for contact</label>
+        <label for="eventContact">WhatsApp for contact <span>(Only numbers)</span></label>
         <input type="tel" name="eventContact" id="eventContact">
 
         <label for="eventInfo">Further Information</label>
@@ -43,21 +43,21 @@
 
         <label for="eventCategory">Category</label>
         <select name="eventCategory" id="eventCategory">
+          <option>Event type</option>
           <option value="social">Social</option>
           <option value="wedding">Wedding</option>
           <option value="birthdayParty">Birthday Party</option>
         </select>
-      </div>
 
-      <header>
-        <h2>Privacy</h2>
-      </header>
+        <header>
+          <h2>Privacy</h2>
+        </header>
 
-      <div>
-        <label for="adminEmail">Administrator Email</label>
+        <label for="adminEmail">Administrator Email <span>(Enter a valid email)</span></label>
         <input type="email" name="adminEmail" id="adminEmail">
 
-        <label for="password">Access password for participants</label>
+        <label for="password">Access password for participants <span>(Your password must be at least 8
+            characters)</span></label>
         <input type="password" name="password" id="password">
 
         <input type="checkbox" name="isPrivate" id="isPrivate">
