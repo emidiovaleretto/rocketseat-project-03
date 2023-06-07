@@ -64,6 +64,10 @@ fieldset legend {
   width: 100%;
 }
 
+input:invalid {
+  border: 1px solid #ff1010;
+}
+
 label {
   color: #4e4958;
   font-size: 0.875rem;
@@ -159,6 +163,7 @@ footer input {
   border: none;
   border-radius: 8px;
   color: #fff;
+  font-weight: 700;
   display: block;
   padding: 15px 40px;
   text-transform: uppercase;

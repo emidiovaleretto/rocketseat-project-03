@@ -30,13 +30,13 @@
 
           <div class="wrapper">
             <label for="eventTitle">Event Title <span>(It must be at least 8 characters)</span></label>
-            <input type="text" name="eventTitle" id="eventTitle">
+            <input type="text" name="eventTitle" id="eventTitle" minlength="8" required>
 
             <label for="eventLink">Event Link <span>(Starts with https://)</span></label>
-            <input type="url" name="eventLink" id="eventLink">
+            <input type="url" name="eventLink" id="eventLink" required>
 
             <label for="eventContact">WhatsApp for contact <span>(Only numbers)</span></label>
-            <input type="tel" name="eventContact" id="eventContact">
+            <input type="tel" name="eventContact" id="eventContact" required>
 
             <label for="eventInfo">Further Information</label>
             <textarea name="eventInfo" id="eventInfo"></textarea>
@@ -55,11 +55,11 @@
           <legend>Privacy</legend>
           <div class="wrapper">
             <label for="adminEmail">Administrator Email <span>(Enter a valid email)</span></label>
-            <input type="email" name="adminEmail" id="adminEmail">
+            <input type="email" name="adminEmail" id="adminEmail" required>
 
             <label for="password">Access password for participants <span>(Your password must be at least 8
                 characters)</span></label>
-            <input type="password" name="password" id="password">
+            <input type="password" name="password" id="password" minlength="8" required>
 
             <div class="checkbox-wrapper">
               <input type="checkbox" name="event-privacy" id="event-privacy">
@@ -74,15 +74,15 @@
           <div class="cols-3">
             <div class="wrapper">
               <label for="eventDate">Date</label>
-              <input type="date" name="eventDate" id="eventDate">
+              <input type="date" name="eventDate" id="eventDate" required>
             </div>
             <div class="wrapper">
               <label for="eventFrom">From</label>
-              <input type="time" name="eventFrom" id="eventFrom">
+              <input type="time" name="eventFrom" id="eventFrom" required>
             </div>
             <div class="wrapper">
               <label for="eventTo">To</label>
-              <input type="time" name="eventTo" id="eventTo">
+              <input type="time" name="eventTo" id="eventTo" required>
             </div>
           </div>
         </fieldset>
