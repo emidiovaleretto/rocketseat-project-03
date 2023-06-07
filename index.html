@@ -47,6 +47,7 @@
             <option value="wedding">Wedding</option>
             <option value="birthdayParty">Birthday Party</option>
           </select>
+
       </fieldset>
 
       <fieldset>
@@ -67,15 +68,19 @@
       <fieldset>
         <legend>Date and Time</legend>
 
-        <div class="date">
-          <label for="eventDate">Date</label>
-          <input type="date" name="eventDate" id="eventDate">
-
-          <label for="eventFrom">From</label>
-          <input type="time" name="eventFrom" id="eventFrom">
-
-          <label for="eventTo">To</label>
-          <input type="time" name="eventTo" id="eventTo">
+        <div class="cols-3">
+          <div class="wrapper">
+            <label for="eventDate">Date</label>
+            <input type="date" name="eventDate" id="eventDate">
+          </div>
+          <div class="wrapper">
+            <label for="eventFrom">From</label>
+            <input type="time" name="eventFrom" id="eventFrom">
+          </div>
+          <div class="wrapper">
+            <label for="eventTo">To</label>
+            <input type="time" name="eventTo" id="eventTo">
+          </div>
         </div>
       </fieldset>
 
